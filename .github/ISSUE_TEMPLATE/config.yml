@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 作业提交指南
+    url: https://github.com/wzm-Epoch/zhaogege/blob/main/CONTRIBUTING.md
+    about: 作业文件请通过 PR 提交；Issue 用于任务和讨论。
