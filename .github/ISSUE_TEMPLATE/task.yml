@@ -1,0 +1,38 @@
+name: 作业发布
+description: 负责人发布学习任务和提交要求
+title: "[作业发布] "
+body:
+  - type: input
+    id: task_id
+    attributes:
+      label: 作业编号
+      description: 使用唯一编号，作为 assignments 下的目录名；以英文字母或数字开头，只用英文字母、数字、短横线或下划线。
+      placeholder: task-001
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: 学习目标与任务要求
+      description: 明确成员需要完成什么，以及相关资料。
+    validations:
+      required: true
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: 提交内容与验收标准
+      description: 说明需要提交的文件、结果和检查标准；路径使用 assignments/作业编号/GitHub用户名/。
+    validations:
+      required: true
+  - type: input
+    id: deadline
+    attributes:
+      label: 截止时间
+      description: 写明日期、时间和时区；没有截止时间请写“不设截止时间”。
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充说明
+      description: 可说明评分方式、协作要求或其他注意事项。

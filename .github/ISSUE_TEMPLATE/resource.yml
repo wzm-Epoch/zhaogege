@@ -1,0 +1,18 @@
+name: 资源分享
+description: 分享学习资料、工具或实践心得
+title: "[分享] "
+body:
+  - type: input
+    id: source
+    attributes:
+      label: 资源链接
+      description: 提供原始来源；分享自己仓库中的笔记时可填写笔记链接。
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: 内容介绍与推荐理由
+      description: 说明适合谁、解决什么问题，以及是否需要付费或登录。
+    validations:
+      required: true

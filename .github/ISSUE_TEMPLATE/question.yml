@@ -1,0 +1,25 @@
+name: 学习提问
+description: 交流学习或作业中遇到的问题
+title: "[提问] "
+body:
+  - type: input
+    id: context
+    attributes:
+      label: 相关作业或主题
+      description: 可填写作业编号、Issue、PR 或学习主题。
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: 具体问题
+      description: 描述预期结果与实际情况；报错请附文字，并去除私人信息。
+    validations:
+      required: true
+  - type: textarea
+    id: attempts
+    attributes:
+      label: 已尝试的方法
+      description: 说明查过的资料和尝试结果，便于其他成员提供帮助。
+    validations:
+      required: true
